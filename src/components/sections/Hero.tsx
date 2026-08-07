@@ -51,7 +51,7 @@ export function Hero() {
           
           <h1 className="text-5xl md:text-7xl font-bold text-text mb-4 leading-tight">
             Hi, I'm <br />
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Eyuel Negash</span>
           </h1>
           
           <div className="h-12 md:h-16 mb-6">
@@ -102,7 +102,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl -z-10 backdrop-blur-3xl"></div>
             
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80" 
+              src= "img/me.jpg"
               alt="Profile" 
               className="w-full h-full object-cover rounded-3xl shadow-2xl border border-white/10"
             />
