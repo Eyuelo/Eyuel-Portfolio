@@ -62,8 +62,10 @@ export function Hero() {
           </div>
           
           <p className="text-lg text-textMuted mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed">
-            I build scalable web applications and craft intuitive digital experiences.
-            Passionate about modern web technologies and clean architecture.
+            I build scalable ERP and Health Management Information Systems (HMIS) that streamline business operations,
+             improve healthcare workflows, and deliver intuitive digital experiences. Passionate about clean architecture,
+              modern technologies,
+             and impactful software solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
