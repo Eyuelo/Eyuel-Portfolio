@@ -4,12 +4,13 @@ import { Briefcase } from 'lucide-react';
 export function Experience() {
   const experiences = [
     {
-      role: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      duration: '2021 - Present',
-      description: 'Lead a team of 5 developers to build and maintain enterprise web applications. Improved application performance by 40% through code optimization and implementing modern caching strategies.',
-      skills: ['React', 'Node.js', 'AWS', 'TypeScript']
-    },
+      role: 'Software Developer | ERP & HMIS Implementation Specialist ',
+      company: 'Infranet Technology PLC.',
+      duration: '2023 - Present',
+      description: 'Develop and customize ERP and HMIS solutions to improve healthcare and business operations. Lead system implementation, configuration, deployment, technical support, and post-go-live activities. Develop custom modules, workflows, reports, integrations, and automation while working closely with users to understand and improve business processes.',
+      skills: ['HMIS', 'ERP', 'SQL', 'System Implementation']
+    }
+    /*,
     {
       role: 'Frontend Developer',
       company: 'Digital Creative Agency',
@@ -23,7 +24,7 @@ export function Experience() {
       duration: '2016 - 2018',
       description: 'Assisted in the development of the main product dashboard. Fixed bugs and implemented minor features under the guidance of senior developers.',
       skills: ['HTML/CSS', 'jQuery', 'PHP', 'MySQL']
-    }
+    }*/
   ];
 
   return (

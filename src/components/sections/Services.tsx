@@ -1,38 +1,39 @@
 import { motion } from 'framer-motion';
-import { Monitor, Smartphone, Database, Palette, Globe, Server } from 'lucide-react';
+import { Monitor, Globe, Hospital, DatabaseZap, Presentation } from 'lucide-react';
 
 export function Services() {
   const services = [
     {
-      title: 'Frontend Development',
-      description: 'Building responsive, accessible, and high-performance user interfaces using modern frameworks like React and Vue.',
+      title: 'ERP Development & Customization',
+      description: 'Customizing and extending ERP platforms to match specific business processes, including modules, workflows, reports, permissions, and automation.',
       icon: <Monitor className="w-8 h-8 text-primary" />
     },
     {
-      title: 'Backend Development',
-      description: 'Designing scalable architectures and robust APIs using Node.js, Python, and scalable databases.',
-      icon: <Server className="w-8 h-8 text-secondary" />
+      title: 'HMIS Development & Implementation',
+      description: 'Designing and implementing comprehensive healthcare information systems to streamline clinical workflows and improve patient care.',
+      icon: <Hospital className="w-8 h-8 text-primary" />
     },
     {
-      title: 'Full Stack Solutions',
-      description: 'End-to-end web application development from database design to deployment and maintenance.',
+      title: 'Full-Stack Development',
+      description: 'Building scalable web applications from frontend interfaces to backend services, databases, APIs, and deployment.',
       icon: <Globe className="w-8 h-8 text-primary" />
     },
     {
-      title: 'UI/UX Implementation',
-      description: 'Translating design mockups into pixel-perfect, interactive, and engaging web experiences.',
-      icon: <Palette className="w-8 h-8 text-secondary" />
+      title: 'Database & Reporting Solutions',
+      description: 'Designing databases, developing complex queries, creating custom reports, and optimizing data workflows for business and healthcare systems.',
+      icon: <DatabaseZap className="w-8 h-8 text-primary" />
     },
     {
-      title: 'API Development',
-      description: 'Creating secure RESTful and GraphQL APIs for seamless data communication between services.',
-      icon: <Database className="w-8 h-8 text-primary" />
-    },
+      title: 'System Implementation & Training',
+      description: 'Deploying, configuring, documenting, and supporting enterprise systems while training users and teams for successful adoption.',
+      icon: <Presentation className="w-8 h-8 text-primary" />
+    }
+    /*,
     {
       title: 'Mobile Optimization',
       description: 'Ensuring your web applications look and function flawlessly across all devices and screen sizes.',
       icon: <Smartphone className="w-8 h-8 text-secondary" />
-    }
+    }*/
   ];
 
   return (

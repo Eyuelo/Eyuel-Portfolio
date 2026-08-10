@@ -43,10 +43,13 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-text mb-6">Let's talk about your project</h3>
+            <h3 className="text-2xl font-bold text-text mb-6">Let's Build Something Meaningful Together</h3>
             <p className="text-textMuted mb-8 leading-relaxed">
-              Whether you have a question, a project in mind, or just want to say hi, I'll try my best to get back to you!
+              Have an ERP or HMIS project, need system customization or integration, or looking for a full-stack development solution?
+               I'd be happy to discuss your requirements, explore the right approach,
+               and help turn your ideas into a practical digital solution.
             </p>
+            <h5 className="text-lg font-semibold text-text mb-4">Let's connect and build technology that creates real impact.</h5>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
@@ -55,7 +58,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-text mb-1">Email</h4>
-                  <a href="mailto:hello@example.com" className="text-textMuted hover:text-primary transition-colors">hello@example.com</a>
+                  <a href="mailto:eyuelnegash21@gmail.com" className="text-textMuted hover:text-primary transition-colors">eyuelnegash21@gmail.com</a>
                 </div>
               </div>
 
@@ -65,7 +68,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-text mb-1">Phone</h4>
-                  <a href="tel:+1234567890" className="text-textMuted hover:text-primary transition-colors">+1 (234) 567-890</a>
+                  <a href="tel:+251919782237" className="text-textMuted hover:text-primary transition-colors">+251 (9) 19782237</a>
                 </div>
               </div>
 
@@ -75,7 +78,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-text mb-1">Location</h4>
-                  <p className="text-textMuted">San Francisco, California</p>
+                  <p className="text-textMuted">Addis Ababa, Ethiopia</p>
                 </div>
               </div>
             </div>
@@ -110,7 +113,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                   className="w-full px-4 py-3 bg-surface border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-text transition-all"
-                  placeholder="john@example.com"
+                  placeholder="abebe@example.com"
                 />
               </div>
 

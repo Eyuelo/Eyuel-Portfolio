@@ -4,22 +4,22 @@ import { Quote } from 'lucide-react';
 export function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO at TechStart',
-      content: 'Working with this developer was an absolute pleasure. They delivered our MVP ahead of schedule and the code quality was exceptional. Highly recommended for any complex web projects.',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80'
+      name: '',
+      role: 'ICT Manager',
+      content: 'The ERP and HMIS implementation significantly improved our day-to-day operations. The system was customized to fit our workflows, and the support provided throughout implementation made the transition much easier.',
+      image: ''
     },
     {
-      name: 'Michael Chen',
-      role: 'Product Manager',
-      content: 'Incredible attention to detail and a great eye for design. They transformed our outdated platform into a modern, fast, and user-friendly application that our customers love.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80'
+      name: '',
+      role: 'System Administrator',
+      content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
+      image: ''
     },
     {
-      name: 'Emily Davis',
-      role: 'Startup Founder',
-      content: 'Not only a great coder but also a great communicator. They kept us updated throughout the entire process and offered valuable suggestions to improve our original concept.',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=80'
+      name: '',
+      role: 'System Developer & Integration Manager',
+      content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
+      image: ''
     }
   ];
 

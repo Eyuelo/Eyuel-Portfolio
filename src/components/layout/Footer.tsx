@@ -1,5 +1,5 @@
-import { Mail, ArrowUp } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from '../ui/SocialIcons';
+import { Mail, ArrowUp, Send } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '../ui/SocialIcons';
 
 export function Footer() {
   const scrollToTop = () => {
@@ -13,8 +13,8 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold text-gradient mb-4">&lt;DevPortfolio /&gt;</h3>
             <p className="text-textMuted text-sm leading-relaxed">
-              Building exceptional digital experiences with modern web technologies.
-              Always learning, always creating.
+              Building impactful digital solutions with modern technologies, specializing in ERP, HMIS, and full-stack development. 
+              Always learning, always creating, always solving real-world problems.
             </p>
           </div>
           
@@ -31,16 +31,21 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-text mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
+              <a href="https://github.com/Eyuelo" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
                 <GithubIcon className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
+              <a href="https://www.linkedin.com/in/eyuelnegash" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
                 <LinkedinIcon className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
-                <TwitterIcon className="w-5 h-5" />
-              </a>
-              <a href="mailto:hello@example.com" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
+                <a
+          href="https://t.me/eyuel_n"
+             target="_blank"
+                  rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all"
+                            >
+         <Send className="w-5 h-5" />
+        </a>
+              <a href="mailto:eyuelnegash21@gmail.com" className="w-10 h-10 rounded-full bg-surfaceLight flex items-center justify-center text-textMuted hover:text-primary hover:bg-white/5 transition-all">
                 <Mail className="w-5 h-5" />
               </a>
             </div>

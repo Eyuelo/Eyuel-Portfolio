@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 export function Hero() {
   const [text, setText] = useState('');
-  const fullText = "Full Stack Developer";
+  const fullText = "ERP & HMIS Specialist | Full Stack Developer";
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
@@ -49,10 +49,10 @@ export function Hero() {
             <span className="text-primary font-medium text-sm">Available for work</span>
           </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-text mb-4 leading-tight">
+          <h2 className="text-5xl md:text-7xl font-bold text-text mb-4 leading-tight">
             Hi, I'm <br />
             <span className="text-gradient">Eyuel Negash</span>
-          </h1>
+          </h2>
           
           <div className="h-12 md:h-16 mb-6">
             <h2 className="text-2xl md:text-4xl text-textMuted font-medium flex items-center justify-center md:justify-start">
@@ -80,13 +80,13 @@ export function Hero() {
           </div>
           
           <div className="mt-12 flex items-center justify-center md:justify-start gap-6">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-textMuted hover:text-primary transition-colors">
+            <a href="https://github.com/Eyuelo" target="_blank" rel="noreferrer" className="text-textMuted hover:text-primary transition-colors">
               <GithubIcon className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-textMuted hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/eyuelnegash" target="_blank" rel="noreferrer" className="text-textMuted hover:text-primary transition-colors">
               <LinkedinIcon className="w-6 h-6" />
             </a>
-            <a href="mailto:hello@example.com" className="text-textMuted hover:text-primary transition-colors">
+            <a href="mailto:eyuelnegash21@gmail.com" className="text-textMuted hover:text-primary transition-colors">
               <Mail className="w-6 h-6" />
             </a>
           </div>

@@ -36,13 +36,19 @@ export function About() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-2xl font-semibold text-text mb-6">
-              I'm a passionate Software Developer building modern web applications
+              I'm a passionate Software Developer building impactful ERP & HMIS solutions
             </h3>
             <p className="text-textMuted mb-6 leading-relaxed">
-              With over 5 years of experience in full-stack development, I specialize in creating scalable, responsive, and user-centric digital solutions. My journey started with a fascination for how things work on the internet, which evolved into a career dedicated to crafting exceptional software.
+              With over 3 years of professional experience in software development, 
+              system implementation, and technical support, I specialize in building and 
+              customizing Enterprise Resource Planning (ERP) and Health Management Information Systems 
+              (HMIS) that solve real-world business and healthcare challenges.
             </p>
             <p className="text-textMuted mb-8 leading-relaxed">
-              I believe in clean code, continuous learning, and the power of technology to solve real-world problems. When I'm not coding, you can find me exploring new frameworks, writing technical articles, or enjoying a good cup of coffee.
+              I believe in clean architecture, continuous learning, collaboration, and technology 
+              that creates meaningful impact. I have contributed to ERP and HMIS implementations across
+               healthcare and other industries, while also customizing systems and training 200+ 
+              users and professionals to effectively adopt and use digital solutions.
             </p>
             
             <div className="flex flex-wrap gap-4">
