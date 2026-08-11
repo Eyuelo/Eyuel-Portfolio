@@ -46,7 +46,7 @@ export function Services() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold text-text mb-4"
           >
-            My <span className="text-gradient">Services</span>
+            What <span className="text-gradient">I Do</span>
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, width: 0 }}

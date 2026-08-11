@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Target, Code2, Coffee } from 'lucide-react';
+import {  Code2, Coffee } from 'lucide-react';
 
 export function About() {
   const stats = [
     { label: 'Years Experience', value: '3+', icon: <Coffee className="w-6 h-6 text-primary" /> },
-    { label: 'Projects Completed', value: '40+', icon: <Code2 className="w-6 h-6 text-secondary" /> },
-    { label: 'Happy Clients', value: '25+', icon: <Target className="w-6 h-6 text-primary" /> },
+    { label: 'Projects ', value: '6+', icon: <Code2 className="w-6 h-6 text-secondary" /> },
+    /*{ label: 'Happy Clients', value: '25+', icon: <Target className="w-6 h-6 text-primary" /> },*/
   ];
 
   return (

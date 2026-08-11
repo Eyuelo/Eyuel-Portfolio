@@ -10,7 +10,7 @@ I'm a passionate Software Developer specializing in **ERP, HMIS, and full-stack 
 
 I focus on building and customizing scalable digital solutions that solve real-world business and healthcare challenges. My experience includes software development, ERP/HMIS implementation, system customization, API integration, database management, technical support, and user training.
 
-I have contributed to the implementation and support of digital systems across healthcare and business environments and have trained and supported **200+ users and professionals**.
+I have contributed to the implementation and support of digital systems across healthcare and business environments and have trained 200+ users and professionals**.
 
 ## ✨ Features
 

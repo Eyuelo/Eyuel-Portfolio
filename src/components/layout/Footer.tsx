@@ -11,7 +11,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-gradient mb-4">&lt;DevPortfolio /&gt;</h3>
+            <h3 className="text-xl font-bold text-gradient mb-4">&lt;Kedamawi Tech /&gt;</h3>
             <p className="text-textMuted text-sm leading-relaxed">
               Building impactful digital solutions with modern technologies, specializing in ERP, HMIS, and full-stack development. 
               Always learning, always creating, always solving real-world problems.
@@ -54,7 +54,7 @@ export function Footer() {
         
         <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-textMuted text-sm text-center md:text-left mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Software Developer. All rights reserved.
+            &copy; {new Date().getFullYear()} Kedamawi Tech — Eyuel Negash. All rights reserved.
           </p>
           <button
             onClick={scrollToTop}

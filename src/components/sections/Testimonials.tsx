@@ -4,20 +4,20 @@ import { Quote } from 'lucide-react';
 export function Testimonials() {
   const testimonials = [
     {
-      name: '',
-      role: 'ICT Manager',
+      name: 'ICT Manager',
+      role: 'ICT Manager , Bethzata General Hospital',
       content: 'The ERP and HMIS implementation significantly improved our day-to-day operations. The system was customized to fit our workflows, and the support provided throughout implementation made the transition much easier.',
       image: ''
     },
     {
-      name: '',
-      role: 'System Administrator',
+      name: 'Anwar Mohammed',
+      role: 'System Administrator, Amin General Hospital',
       content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
       image: ''
     },
     {
-      name: '',
-      role: 'System Developer & Integration Manager',
+      name: 'System Developer ',
+      role: 'System Developer & Integration Manager, Shangi Furniture PLC',
       content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
       image: ''
     }
@@ -33,7 +33,7 @@ export function Testimonials() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold text-text mb-4"
           >
-            Client <span className="text-gradient">Testimonials</span>
+            What <span className="text-gradient">People Say</span>
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, width: 0 }}
@@ -56,11 +56,17 @@ export function Testimonials() {
               <Quote className="absolute top-8 right-8 w-12 h-12 text-primary/10" />
               <p className="text-textMuted italic mb-6 relative z-10">"{testimonial.content}"</p>
               <div className="flex items-center gap-4">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name} 
-                  className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
-                />
+                {testimonial.image ? (
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name} 
+                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-primary/25 text-primary flex items-center justify-center border-2 border-primary/20 font-bold">
+                    {testimonial.name.split(' ').map((word) => word[0]).slice(0, 2).join('')}
+                  </div>
+                )}
                 <div>
                   <h4 className="text-text font-bold">{testimonial.name}</h4>
                   <p className="text-textMuted text-sm">{testimonial.role}</p>

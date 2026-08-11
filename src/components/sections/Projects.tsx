@@ -2,38 +2,43 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { GithubIcon } from '../ui/SocialIcons';
 
+
+
+
 export function Projects() {
+  const base = import.meta.env.BASE_URL;
+
   const projects = [
     {
       title: 'Hospital Management Information System (HMIS)',
       description: 'A comprehensive healthcare platform supporting EMR, patient management, billing, laboratory, pharmacy, radiology, insurance, and other hospital workflows.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop&q=80',
+      image: `${base}image/HMIS.png`,
       tech: ['HMIS', 'C#', 'SQL'],
-      github: '#',
-      demo: '#',
-      featured: true,
+      // github: '#',
+      // demo: '#',
+      //featured: true,
     },
     {
       title: 'Enterprise Resource Planning (ERP) System',
       description: 'Customized ERP solution designed to streamline business operations including finance, inventory, purchasing, sales, HR, and workflow management.',
-      image: 'https://images.unsplash.com/photo-1507925922837-326f73400e27?w=800&auto=format&fit=crop&q=80',
+      image: `${base}image/erp.jpg`,
       tech: ['ERP', 'ERPNext', 'Frappe', 'Python', 'JavaScript'],
       github: '#',
       demo: '#',
-      featured: true,
+      //featured: true,
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Interactive weather application with 7-day forecast and interactive maps.',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop&q=80',
-      tech: ['React', 'OpenWeather API', 'Chart.js'],
-      github: '#',
-      demo: '#',
+      title: 'Full-Stack Development',
+      description: 'Building scalable web applications from frontend interfaces to backend services, databases, APIs, and deployment.',
+      image: `${base}image/web.png`,
+      tech: ['React', 'Node.js', 'JavaScript', 'SQL', 'REST APIs'],
+      //github: '#',
+      //demo: '#',
     },
     {
       title: 'Healthcare ERP & Hospital Integration',
       description: 'Integrated healthcare and enterprise systems to connect clinical, financial, inventory, HR, and administrative processes into a unified digital platform.',
-      image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&auto=format&fit=crop&q=80',
+      image: `${base}image/HERP.png`,
       tech: ['HMIS', 'ERP', 'API', 'MariaDB'],
       github: '#',
       demo: '#',
@@ -42,7 +47,7 @@ export function Projects() {
     {
       title: 'ERPNext Customization & Automation',
       description: 'Developed custom modules, workflows, reports, scripts, business rules, and automation to adapt ERPNext to specific organizational requirements.',
-      image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&auto=format&fit=crop&q=80',
+      image: `${base}image/ERPnext.png`,
       tech: ['ERPNext', 'Frappe', 'Python', 'MariaDB'],
       github: '#',
       demo: '#',
@@ -50,7 +55,7 @@ export function Projects() {
     {
       title: 'System Implementation & Training',
       description: 'Led system deployment, configuration, user support, documentation, and training for 200+ users and professionals across healthcare and business environments.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80',
+      image: `${base}image/Training.PNG`,
       tech: ['Implementation', 'Training', 'Technical Support'],
       github: '#',
       demo: '#',
@@ -67,7 +72,7 @@ export function Projects() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold text-text mb-4"
           >
-            Featured <span className="text-gradient">Projects</span>
+             Project <span className="text-gradient">& Implementations</span>
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, width: 0 }}
@@ -94,12 +99,16 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a href={project.github} className="p-3 bg-surface rounded-full text-text hover:text-primary transition-colors hover:scale-110">
-                    <GithubIcon className="w-5 h-5" />
-                  </a>
-                  <a href={project.demo} className="p-3 bg-surface rounded-full text-text hover:text-primary transition-colors hover:scale-110">
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
+                  {project.github && (
+                    <a href={project.github} className="p-3 bg-surface rounded-full text-text hover:text-primary transition-colors hover:scale-110">
+                      <GithubIcon className="w-5 h-5" />
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a href={project.demo} className="p-3 bg-surface rounded-full text-text hover:text-primary transition-colors hover:scale-110">
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
                 {project.featured && (
                   <div className="absolute top-4 left-4 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full shadow-lg">

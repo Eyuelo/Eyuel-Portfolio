@@ -39,7 +39,7 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
             <a href="#" className="text-2xl font-bold text-gradient">
-              &lt;DevPortfolio /&gt;
+              &lt;Kedamawi Tech /&gt;
             </a>
           </div>
 

@@ -2,8 +2,10 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../ui/SocialIcons';
 import { useEffect, useState } from 'react';
+import resumePdf from '../../assets/resume.pdf';
 
 export function Hero() {
+  const base = import.meta.env.BASE_URL;
   const [text, setText] = useState('');
   const fullText = "ERP & HMIS Specialist | Full Stack Developer";
   const [isTyping, setIsTyping] = useState(true);
@@ -49,31 +51,32 @@ export function Hero() {
             <span className="text-primary font-medium text-sm">Available for work</span>
           </motion.div>
           
-          <h2 className="text-5xl md:text-7xl font-bold text-text mb-4 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-text mb-4 leading-tight">
             Hi, I'm <br />
             <span className="text-gradient">Eyuel Negash</span>
           </h2>
           
           <div className="h-12 md:h-16 mb-6">
-            <h2 className="text-2xl md:text-4xl text-textMuted font-medium flex items-center justify-center md:justify-start">
+            <h4 className="text-lg md:text-2xl text-textMuted font-medium flex items-center justify-center md:justify-start">
               <span>{text}</span>
               <span className="w-1 h-8 md:h-10 bg-primary ml-2 animate-pulse"></span>
-            </h2>
+            </h4>
           </div>
           
-          <p className="text-lg text-textMuted mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed">
-            I build scalable ERP and Health Management Information Systems (HMIS) that streamline business operations,
-             improve healthcare workflows, and deliver intuitive digital experiences. Passionate about clean architecture,
-              modern technologies,
-             and impactful software solutions.
-          </p>
+         <p className="text-lg text-textMuted mb-10 max-w-[600px] mx-auto md:mx-0 leading-relaxed">
+        I build scalable ERP and Health Management Information Systems
+  (HMIS) that streamline business operations, improve healthcare
+  workflows, and deliver intuitive digital experiences. Passionate
+  about clean architecture, modern technologies, and impactful
+  software solutions.
+</p>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
             <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl font-medium hover:bg-primary/90 transition-all flex items-center justify-center gap-2 group shadow-lg shadow-primary/25">
               Hire Me
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="/resume.pdf" target="_blank" className="w-full sm:w-auto px-8 py-4 glass rounded-xl font-medium text-text hover:bg-white/10 transition-all flex items-center justify-center gap-2 border-white/10">
+            <a href={resumePdf} target="_blank" className="w-full sm:w-auto px-8 py-4 glass rounded-xl font-medium text-text hover:bg-white/10 transition-all flex items-center justify-center gap-2 border-white/10">
               <Download className="w-4 h-4" />
               Download CV
             </a>
@@ -98,15 +101,15 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="relative w-72 h-72 md:w-96 md:h-96">
+          <div className="relative w-[min(88vw,34rem)] max-w-full">
             {/* Abstract decorative frame */}
             <div className="absolute inset-0 border-2 border-primary/30 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl -z-10 backdrop-blur-3xl"></div>
             
             <img 
-              src= "img/me.jpg"
+              src={`${base}image/me.jpg`}
               alt="Profile" 
-              className="w-full h-full object-cover rounded-3xl shadow-2xl border border-white/10"
+              className="w-full h-auto object-contain object-center rounded-3xl shadow-2xl border border-white/10 bg-surface/50"
             />
           </div>
         </motion.div>
