@@ -73,7 +73,7 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
             <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl font-medium hover:bg-primary/90 transition-all flex items-center justify-center gap-2 group shadow-lg shadow-primary/25">
-              Hire Me
+              Let's Work Together
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href={resumePdf} target="_blank" className="w-full sm:w-auto px-8 py-4 glass rounded-xl font-medium text-text hover:bg-white/10 transition-all flex items-center justify-center gap-2 border-white/10">

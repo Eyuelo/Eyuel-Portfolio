@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
-import { GithubIcon } from '../ui/SocialIcons';
 
 
 
@@ -23,8 +21,8 @@ export function Projects() {
       description: 'Customized ERP solution designed to streamline business operations including finance, inventory, purchasing, sales, HR, and workflow management.',
       image: `${base}image/erp.jpg`,
       tech: ['ERP', 'ERPNext', 'Frappe', 'Python', 'JavaScript'],
-      github: '#',
-      demo: '#',
+      // github: '#',
+      // demo: '#',
       //featured: true,
     },
     {
@@ -40,8 +38,8 @@ export function Projects() {
       description: 'Integrated healthcare and enterprise systems to connect clinical, financial, inventory, HR, and administrative processes into a unified digital platform.',
       image: `${base}image/HERP.png`,
       tech: ['HMIS', 'ERP', 'API', 'MariaDB'],
-      github: '#',
-      demo: '#',
+      // github: '#',
+      // demo: '#',
       featured: true,
     },
     {
@@ -49,16 +47,16 @@ export function Projects() {
       description: 'Developed custom modules, workflows, reports, scripts, business rules, and automation to adapt ERPNext to specific organizational requirements.',
       image: `${base}image/ERPnext.png`,
       tech: ['ERPNext', 'Frappe', 'Python', 'MariaDB'],
-      github: '#',
-      demo: '#',
+      // github: '#',
+      // demo: '#',
     },
     {
       title: 'System Implementation & Training',
-      description: 'Led system deployment, configuration, user support, documentation, and training for 200+ users and professionals across healthcare and business environments.',
+      description: 'Led system deployment, configuration, support, and training for 200+ users and professionals across healthcare and business environments.',
       image: `${base}image/Training.PNG`,
       tech: ['Implementation', 'Training', 'Technical Support'],
-      github: '#',
-      demo: '#',
+      // github: '#',
+      // demo: '#',
     }
   ];
 
@@ -98,7 +96,7 @@ export function Projects() {
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                {/* <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   {project.github && (
                     <a href={project.github} className="p-3 bg-surface rounded-full text-text hover:text-primary transition-colors hover:scale-110">
                       <GithubIcon className="w-5 h-5" />
@@ -109,7 +107,7 @@ export function Projects() {
                       <ExternalLink className="w-5 h-5" />
                     </a>
                   )}
-                </div>
+                </div> */}
                 {project.featured && (
                   <div className="absolute top-4 left-4 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full shadow-lg">
                     Featured

@@ -2,20 +2,20 @@ import { motion } from 'framer-motion';
 
 export function Skills() {
   const skills = [
-    { name: 'ERPNext', level: 90 },
-    { name: 'Frappe Framework', level: 90 },
-    { name: 'ERP Customization', level: 90 },
+    { name: 'ERPNext', level: 80 },
+    { name: 'Frappe Framework', level: 80 },
+    { name: 'ERP Customization', level: 80 },
     { name: 'HMIS / EMR', level: 90 },
-    { name: 'Python', level: 90 },
+    { name: 'Python', level: 80 },
     { name: 'JavaScript', level: 90 },
-    { name: 'SQL', level: 90 },
-    { name: 'MariaDB', level: 90 },
+    { name: 'SQL', level: 85 },
+    { name: 'MariaDB', level: 85 },
     { name: 'React', level: 85 },
     { name: 'Node.js', level: 80 },
     { name: 'REST APIs', level: 85 },
     { name: 'Git & GitHub', level: 85 },
     { name: 'PostgreSQL', level: 80 },
-    { name: 'Linux / Server Administration', level: 80 },
+    { name: 'Linux / Server Administration', level: 75 },
   ];
 
   return (

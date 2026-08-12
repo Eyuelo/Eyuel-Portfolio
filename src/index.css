@@ -5,6 +5,26 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background: 248 250 252;
+    --surface: 255 255 255;
+    --surface-light: 248 250 252;
+    --primary: 99 102 241;
+    --secondary: 168 85 247;
+    --text: 15 23 42;
+    --text-muted: 100 116 139;
+  }
+
+  .dark {
+    --background: 10 10 15;
+    --surface: 18 18 26;
+    --surface-light: 28 28 40;
+    --primary: 99 102 241;
+    --secondary: 168 85 247;
+    --text: 248 250 252;
+    --text-muted: 148 163 184;
+  }
+
   body {
     @apply bg-background text-text font-sans antialiased overflow-x-hidden transition-colors duration-300;
   }

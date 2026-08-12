@@ -4,20 +4,20 @@ import { Quote } from 'lucide-react';
 export function Testimonials() {
   const testimonials = [
     {
-      name: 'ICT Manager',
-      role: 'ICT Manager , Bethzata General Hospital',
+      name: 'Biniyam Kebede',
+      role: 'IT Manager @ Bethzata General Hospital',
       content: 'The ERP and HMIS implementation significantly improved our day-to-day operations. The system was customized to fit our workflows, and the support provided throughout implementation made the transition much easier.',
       image: ''
     },
     {
       name: 'Anwar Mohammed',
-      role: 'System Administrator, Amin General Hospital',
+      role: 'System Administrator @ Amin General Hospital',
       content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
       image: ''
     },
     {
-      name: 'System Developer ',
-      role: 'System Developer & Integration Manager, Shangi Furniture PLC',
+      name: 'Tesfaye Gashaw',
+      role: 'System Developer & Integration Manager @ Shangi Furniture PLC',
       content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
       image: ''
     }
