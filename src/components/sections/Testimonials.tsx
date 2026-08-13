@@ -17,7 +17,7 @@ export function Testimonials() {
     },
     {
       name: 'Tesfaye Gashaw',
-      role: 'System Developer & Integration Manager @ Shangi Furniture PLC',
+      role: 'System Development  & Integration Manager @ Shangi Furniture PLC',
       content: 'The system customization was excellent. Business requirements were well understood and translated into practical solutions. The technical support and responsiveness throughout the project were highly appreciated',
       image: ''
     }
