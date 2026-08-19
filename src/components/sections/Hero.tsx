@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../ui/SocialIcons';
 import { useEffect, useState } from 'react';
-import resumePdf from '../../assets/resume.pdf';
+import resumePdf from '../../assets/resume_new.pdf';
 
 export function Hero() {
   const base = import.meta.env.BASE_URL;
